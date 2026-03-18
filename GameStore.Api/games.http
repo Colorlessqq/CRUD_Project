@@ -1,0 +1,32 @@
+GET http://localhost:5101
+
+###
+GET http://localhost:5101/games/
+
+###
+POST http://localhost:5101/games
+Content-Type: application/json
+
+{
+    "name": "Game 9",
+    "genreId": "4",
+    "price": 65.00,
+    "releaseDate": "2012-01-10"
+}
+
+###
+PUT http://localhost:5101/games/59e66895-3003-4e81-aa3d-604a93d8d056
+Content-Type: application/json
+
+{
+    "name": "GameNew8",
+    "genreId": "1",
+    "price": 150.00,
+    "releaseDate": "2011-02-25"
+}
+
+###
+DELETE http://localhost:5101/games/8
+
+###
+GET http://localhost:5101/genres
